@@ -22,10 +22,6 @@ public class Project12 {
         System.out.println(Arrays.toString(arr));
         System.out.println();
 
-        int[] newArr = orderArray(arr);
-        System.out.print("Отсортированный массив: ");
-        System.out.println(Arrays.toString(newArr));
-
         Logger logger = Logger.getLogger(Project12.class.getName());
         // ConsoleHandler ch = new ConsoleHandler();
         FileHandler fh = new FileHandler("logProject12.txt");
@@ -41,8 +37,9 @@ public class Project12 {
         logger.log(Level.WARNING, "Тестовое логирование 1");
         logger.info("Тестовое логирование 2");
 
-
-
+        int[] newArr = orderArray(arr);
+        System.out.print("Отсортированный массив: ");
+        System.out.println(Arrays.toString(newArr));
     }
 
     public static int[] orderArray(int[] array) {
